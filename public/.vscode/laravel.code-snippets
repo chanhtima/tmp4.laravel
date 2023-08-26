@@ -1,0 +1,31 @@
+{
+
+	"Div Element with Class": {
+		"prefix": ["dv", "div"],
+		"body": ["div(class=\"${1}\")"],
+		"description": "Create DIV element with class attribute."
+	},
+	"Laravel IMG Src ":{
+		"prefix" : ["img"],
+		"body": ["<img src=\"{{ Module::asset('frontend:img/${1}') }}\" ${2}>"],
+		"description": "Create img element and call img src with laravel syntax."
+	},
+	"Laravel a href with Class":{
+		"prefix" : ["a class"],
+		"body": [
+			"<a href=\"{{ url('${1}') }}\" class=\"${2}\" >",
+				"\t${3}",
+			"</a>",
+		],
+		"description": "Create a element and call href with laravel syntax."
+	},
+	"Laravel a href ":{
+		"prefix" : ["url"],
+		"body": [
+			"<a href=\"{{ url('${1}') }}\">",
+				"\t${3}",
+			"</a>",
+		],
+		"description": "Create a element and call href with laravel syntax."
+	}
+}
